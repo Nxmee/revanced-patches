@@ -17,7 +17,7 @@ import java.nio.file.Files
 @Patch
 @DependsOn([FixLocaleConfigErrorPatch::class])
 @Name("custom-branding")
-@Description("Changes the YouTube launcher icon and name to your choice (defaults to ReVanced).")
+@Description("Changes the YouTube launcher icon and name to your choice (defaults to Nxmee).")
 @CustomBrandingCompatibility
 @Version("0.0.1")
 class CustomBrandingPatch : ResourcePatch {
@@ -77,7 +77,7 @@ class CustomBrandingPatch : ResourcePatch {
         private var appName: String? by option(
             PatchOption.StringOption(
                 key = "appName",
-                default = "YouTube ReVanced",
+                default = "YouTube Nxmee",
                 title = "Application Name",
                 description = "The name of the application it will show on your home screen.",
                 required = true
